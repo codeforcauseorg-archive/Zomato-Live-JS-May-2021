@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #coins {
+        width: 100vw;
+        height: 100vh;
+        background-color: bisque;
+        position: relative;
+      }
+
+      #score {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="coins">
+      <h1 id="score">Score : 0</h1>
+    </div>
+    <script>
+      let coins = document.getElementById("coins");
+      let score = 0;
+      let scoreItem = document.getElementById("score");
+      let coinSound = new Audio("./coins.mp3");
+
+      setInterval(function () {
+        let coin = document.createElement("img");
+        coin.src = "./coin.png";
+        let alive = true;
+
+        let rw = parseInt((window.innerWidth - 50) * Math.random());
+        let rh = parseInt((window.innerHeight - 50) * Math.random());
+
+        coin.style.setProperty("position", "absolute");
+        coin.style.setProperty("bottom", `${rh}px`);
+        coin.style.setProperty("left", `${rw}px`);
+
+        coin.style.setProperty("width", "50px");
+        coin.style.setProperty("height", "50px");
+        coins.appendChild(coin);
+
+        coin.onmouseover = function () {
+          coinSound.play();
+          score += 10;
+          scoreItem.innerHTML = `Score: ${score}`;
+          coins.removeChild(coin);
+          console.log("collected");
+          alive = false;
+        };
+
+        setTimeout(function () {
+          if (alive) {
+            coins.removeChild(coin);
+          }
+        }, 2000);
+      }, 500);
+    </script>
+  </body>
+</html>
