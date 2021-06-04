@@ -6,7 +6,20 @@ export default function AuthGaurd({ children }) {
   let { user } = useContext(UserContext);
 
   if (user === undefined) {
-    return <h1>Loading....</h1>;
+    return (
+      <div
+        style={{
+          width: "100vw",
+          height: "100vh",
+          background: "#666666",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <img alt="anything" src="/logo192.png"></img>
+      </div>
+    );
   } else if (user === null) {
     return <Redirect to="/login" />;
   } else {
