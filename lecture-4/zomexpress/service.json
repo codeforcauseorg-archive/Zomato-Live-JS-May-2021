@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "zomato-f797b",
+  "private_key_id": "c241ac9dde5ce67aebba35525bf6fae367ba568a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDCZSmq3hWO2W59\nDqRsDS6nRMyqeQJuUBxrnQsj1viO4FxGxfeSVIj+LqwbSKvUK08VW1KotaMyWFCR\nZBUWURBpo6wgWWLOTt3IpJPm+H8fNCg/xp59BZYQk0334AZkCs8k0hn+fJM1WiRK\n4mdrqg3uCqciIwvVZnwBGh785eAZs/kxTzRcnB/fBZHjZLOdP+49aYNLUrhWuOdE\nAE4dOg347pwOQNuEh4/LPSfto7xt0uwiTPVZ2as6/D/utovy8IuG9vuWIR3yV3ON\nkzOhHMFO05grzjGCcB9NLFBnG2qDSAkkUJdNuC7lS4lKqBdVj9xNri+Ch6TKXPut\nZGENFVBNAgMBAAECggEAAg9dYiypUNK4C4Y4stZu7KHbg2D16CJcMr2+zPntt2Hk\nSHG3nmrb6smm1EEwZPayh1jo5tXJ7XInJGtJl+ty/5OW8t7Pn70RN5ua36M5gaSl\nWoupyUxiWzmcZWiP2MaOjGbXlK1QSAv0/4AntWnfbOra+48ghHnqDX7v3iE3fz42\nxtdzxHQWzcI8nRfAbw2gSosqwjb0LQTGbt/Xeon8n/DrkjWgIpNLMA6k/htekMEz\nuxNwAfOuKzohfUKOnHC9zeQ0iPaiJQAGZnuC47mNDzdXA2ukcut/Rp3inwbz82K/\ngSYpJMVMF6cYLq6fTvknkk6erRieXYlp6wCuqu8/AQKBgQDhyC/VbN5GuGY/mr7/\nDzN2DL33x+qz2GGkSyRqVQUeJNpgdXed1r55dgBfct7jB8ayMI/1VDXi1m0cBxLY\nXackLpix1YUg7bIvAnlbo1wq5zm5dzAZSLsk1TnFaWYU4JEQECGxdBaTDxCMY6p/\ni1Q1+L/wePi9bptutU9OQHYdzQKBgQDcaZdQOhHL795mnsR5dv0Lkl4GfQ/Gk70E\nEaOL6ZQpiuStcx2GlvU5OLth6cWF3NN3NyjJsVfN9MJ7TkfH24+31m37LRphyK8S\nmAjvT5sRmz5es6N81UfMKnrXU2IJZIfUzwIA9+EPaiieQHNeETRC0jAMpHNFqln8\n34hivqV8gQKBgQDTo8ryzHIu6Hsv8+ZFQAKFDbyknwkqPBKK5sTjx35cmz74XCQc\nGEfDoxEGZ672MTvXnB3VYXKBh24Pb7ICjwc1q1gGmpeIHkeAOVl4xNCIhuZdK5Qy\nnzKNfDIDEqFVwIs5+2UZ6i+e+egRMPuJQxlU3i9NQpgnOZ8JT3tfZp1RoQKBgQDO\nzTutiG5+PDcdbcXGeX/+xXv29oxAswlbsfkTIztipvDcVO/VAfpfj/0wZxhu+rxm\nVJiudPh/QzDeZJowyK7VvBlA3BauvI6XEZMAhl5mbJReYon4bFyLEShks9V+Hpbb\ncsbchbbisaYepTYZgmbYc0Gl+v401RrNiiX7EAlRAQKBgQCr0n6HjJuKwHv/tZmG\nYS9zjWa9ss2DTU1sHlDgocjdOq34wLwB+BmXxdljMcgfW3/gTLJ7+8CVCunFFkWB\nnmx5tgvJBt3bq0hbmg83rnpXbOtIhQWx4fuaAuXZXHCYDvgUfyGeLmsowQ5gtZYk\niuO5XEB8D0adpFBKYsvU/DtW5w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-q7oaa@zomato-f797b.iam.gserviceaccount.com",
+  "client_id": "104537790429709512199",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-q7oaa%40zomato-f797b.iam.gserviceaccount.com"
+}
