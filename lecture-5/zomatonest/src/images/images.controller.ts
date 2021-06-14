@@ -1,20 +1,7 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Body,
-  Param,
-  Req,
-  Res,
-  Header,
-} from '@nestjs/common';
-
-import { Stream } from 'stream';
+import { Controller, Get, Post, Body, Param, Res } from '@nestjs/common';
 import { ImagesService } from './images.service';
+import { Response } from 'express';
 import { Image } from './schemas/image.schema';
-const { Readable } = require('stream');
-import * as fs from 'fs';
-import { response, Response } from 'express';
 
 @Controller('images')
 export class ImagesController {

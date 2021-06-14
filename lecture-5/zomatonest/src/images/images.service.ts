@@ -16,7 +16,7 @@ export class ImagesService {
   }
 
   async findOne(fname: string): Promise<Image> {
-    let response = await this.imageModel.findOne({name : fname});
+    let response = await this.imageModel.findById(fname);
     return response;
   }
 }

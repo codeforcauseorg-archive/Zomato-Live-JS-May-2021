@@ -6,9 +6,6 @@ export type ImageDocument = Image & Document;
 @Schema()
 export class Image {
   @Prop()
-  name: string;
-
-  @Prop()
   content: string;
 }
 
