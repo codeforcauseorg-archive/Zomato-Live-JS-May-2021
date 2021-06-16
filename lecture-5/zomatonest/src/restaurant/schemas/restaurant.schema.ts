@@ -9,16 +9,22 @@ export class Restaurant {
   name: string;
 
   @Prop()
-  Address: string;
+  address: string;
 
   @Prop()
-  PhoneNo: number;
+  phoneNo: string;
 
   @Prop()
-  Rating: number;
+  rating: string;
 
   @Prop()
-  Menu: Array<object>;
+  menu: Array<object>;
+
+  @Prop()
+  onlineOrder: string;
+
+  @Prop()
+  photo: string;
 }
 
 export const RestaurantSchema = SchemaFactory.createForClass(Restaurant);
