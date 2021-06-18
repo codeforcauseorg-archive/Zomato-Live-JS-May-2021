@@ -6,10 +6,18 @@ import { Box } from "@material-ui/core";
 
 let UserContext = React.createContext();
 let RestrauntsContext = React.createContext();
+let CartContext = React.createContext();
 
 function App() {
+  let emptyCart = {
+    restraunt: undefined,
+    restrauntId: undefined,
+    items: new Map(),
+  };
+
   let [user, setUser] = useState();
   let [restraunts, setRestraunts] = useState([]);
+  let [cart, setCart] = useState(emptyCart);
 
   useEffect(
     function () {
@@ -56,14 +64,16 @@ function App() {
           background: "#ffffff",
         }}
       >
-        <UserContext.Provider value={{ user, setUser }}>
-          <RestrauntsContext.Provider value={{ restraunts }}>
-            <Routes />
-          </RestrauntsContext.Provider>
-        </UserContext.Provider>
+        <CartContext.Provider value={{ cart, setCart }}>
+          <UserContext.Provider value={{ user, setUser }}>
+            <RestrauntsContext.Provider value={{ restraunts }}>
+              <Routes />
+            </RestrauntsContext.Provider>
+          </UserContext.Provider>
+        </CartContext.Provider>
       </Box>
     </Box>
   );
 }
 
-export { App, UserContext, RestrauntsContext };
+export { App, UserContext, RestrauntsContext, CartContext };
