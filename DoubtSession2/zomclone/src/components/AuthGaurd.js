@@ -15,7 +15,12 @@ export default function AuthGaurd({ children }) {
           justifyContent: "center",
         }}
       >
-        <img alt="anything" src="/logo192.png"></img>
+        <img
+          alt="anything"
+          src="/zom-splash.png"
+          width="500px"
+          height="100%"
+        ></img>
       </div>
     );
   } else if (user === null) {

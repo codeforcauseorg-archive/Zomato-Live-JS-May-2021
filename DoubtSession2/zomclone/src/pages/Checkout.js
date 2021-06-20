@@ -3,6 +3,7 @@ import { BillContext, CartContext, UserContext } from "../App";
 import { Box, Typography, List, Button } from "@material-ui/core";
 import Dish from "../components/Dish";
 import { useHistory } from "react-router-dom";
+import StripeButtonComponent from "../components/StripeButtonComponent";
 
 export default function Checkout() {
   let { total, setTotal } = useContext(BillContext);
@@ -81,7 +82,7 @@ export default function Checkout() {
           >
             Back To Menu
           </Button>
-          <Button
+          {/* <Button
             variant="contained"
             color="primary"
             style={{
@@ -89,7 +90,8 @@ export default function Checkout() {
             }}
           >
             Proceed To Pay
-          </Button>
+          </Button> */}
+          <StripeButtonComponent price={total} />
         </Box>
       )}
       <List

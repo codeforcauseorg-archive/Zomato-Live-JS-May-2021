@@ -72,7 +72,7 @@ function App() {
         }}
       >
         <Elements stripe={stripePromise}>
-          <CartContext.Provider value={{ cart, setCart }}>
+          <CartContext.Provider value={{ cart, setCart, emptyCart }}>
             <UserContext.Provider value={{ user, setUser }}>
               <BillContext.Provider value={{ total, setTotal }}>
                 <RestrauntsContext.Provider value={{ restraunts }}>

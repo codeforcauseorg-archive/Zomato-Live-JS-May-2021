@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -10,6 +10,7 @@ import { red } from "@material-ui/core/colors";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import { useHistory } from "react-router-dom";
+import { CartContext } from "../App";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,9 +32,18 @@ const useStyles = makeStyles((theme) => ({
 export default function Restraunt({ info }) {
   const classes = useStyles();
   let history = useHistory();
+  let { emptyCart, cart, setCart } = useContext(CartContext);
 
   return (
-    <Card className={classes.root} onClick={()=> history.push(`menu/?resId=${info._id}`)}>
+    <Card
+      className={classes.root}
+      onClick={() => {
+        if(cart.restrauntId!==info._id){
+          setCart(emptyCart);
+        }
+        history.push(`menu/?resId=${info._id}`);
+      }}
+    >
       <CardMedia
         className={classes.media}
         image={`http://localhost:5000${info.photo}`}
