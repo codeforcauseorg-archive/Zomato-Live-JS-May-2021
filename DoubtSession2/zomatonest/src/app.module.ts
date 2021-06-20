@@ -11,7 +11,7 @@ import { OrderModule } from './order/order.module';
   imports: [
     ImagesModule,
     MongooseModule.forRoot(
-      'mongodb+srv://anuj:anuj@cluster0.8b0lx.mongodb.net/step3?retryWrites=true&w=majority',
+      'mongodb+srv://vasu:devsinghal@cluster0.8b0lx.mongodb.net/step3?retryWrites=true&w=majority',
       { useFindAndModify: false },
     ),
     UserModule,
