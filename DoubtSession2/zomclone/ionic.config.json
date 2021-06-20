@@ -1,0 +1,7 @@
+{
+  "name": "Zom",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
